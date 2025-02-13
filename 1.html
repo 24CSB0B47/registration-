@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #888;
+            width: 400px;
+        }
+        h1, h3, h4, p {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTRATION FORM</h1>
+        <h3>ENTER YOUR DETAILS</h3>
+        <form>
+            <label>First Name:</label>
+            <input type="text" name="firstname" required>
+            
+            <label>Last Name:</label>
+            <input type="text" name="lastname" required>
+            
+            <label>Enter Your Date of Birth:</label>
+            <input type="number" name="dd" placeholder="DD">
+            <input type="number" name="mm" placeholder="MM">
+            <input type="number" name="yyyy" placeholder="YYYY">
+            
+            <label>Mobile No:</label>
+            <input type="number" name="mobile" required>
+            
+            <label>Email ID:</label>
+            <input type="email" name="email" required>
+            
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="others"> Others
+            
+            <label>Branch:</label>
+            <select name="branch">
+                <option value="cse">CSE</option>
+                <option value="ece">ECE</option>
+                <option value="eee">EEE</option>
+                <option value="mec">MEC</option>
+                <option value="civil">Civil</option>
+                <option value="mme">MME</option>
+            </select>
+            
+            <label>Select Your Favorite Subject:</label>
+            <input type="checkbox" name="subject" value="maths"> Maths
+            <input type="checkbox" name="subject" value="physics"> Physics
+            <input type="checkbox" name="subject" value="programming"> Programming
+            
+            <h4>Enter Your Current Address Details</h4>
+            <label>H.No:</label>
+            <input type="text" name="hno" required>
+            
+            <label>Street:</label>
+            <input type="text" name="street" required>
+            
+            <label>Village/Town:</label>
+            <input type="text" name="village" required>
+            
+            <label>Pincode:</label>
+            <input type="number" name="pincode" required>
+            
+            <label>Country:</label>
+            <select name="country">
+                <option value="india">India</option>
+                <option value="others">Others</option>
+            </select>
+            
+            <h4>Enter Your Permanent Address Details</h4>
+            <label>H.No:</label>
+            <input type="text" name="hno_perm" required>
+            
+            <label>Street:</label>
+            <input type="text" name="street_perm" required>
+            
+            <label>Village/Town:</label>
+            <input type="text" name="village_perm" required>
+            
+            <label>Pincode:</label>
+            <input type="number" name="pincode_perm" required>
+            
+            <label>Country:</label>
+            <select name="country_perm">
+                <option value="india">India</option>
+                <option value="others">Others</option>
+            </select>
+            
+            <div class="buttons">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
